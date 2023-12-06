@@ -1,0 +1,37 @@
+﻿<Page x:Class="me.lognin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:me"
+      mc:Ignorable="d" 
+      Background="White"
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="lognin">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="114*"/>
+            <RowDefinition Height="102*"/>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="102*"/>
+            <RowDefinition Height="107*"/>
+        </Grid.RowDefinitions>
+        <Label Content="LOGIN FORM" HorizontalAlignment="Left" Margin="233,28,0,0" VerticalAlignment="Top" Height="48" Width="264" HorizontalContentAlignment="Center" FontSize="30" Background="#FFEDDADA"/>
+        <TextBox x:Name="txtn" HorizontalAlignment="Left" Margin="365,49,0,10" TextWrapping="Wrap" Style="{StaticResource txtbox}" Width="230" Grid.Row="1" TextChanged="txtn_TextChanged"/>
+        <TextBox x:Name="txtp" HorizontalAlignment="Left" Margin="365,20,0,27" TextWrapping="Wrap" Style="{StaticResource txtbox}" Grid.Row="2" Width="230"/>
+        <Label Content="name: " HorizontalAlignment="Left" Margin="233,48,0,0" VerticalAlignment="Top" Style="{StaticResource lable}" Height="55" Width="120" Grid.Row="1"/>
+        <Label Content="password: " HorizontalAlignment="Left" Margin="233,20,0,0" VerticalAlignment="Top" Style="{StaticResource lable}" Grid.Row="2" Height="55" Width="120"/>
+        <Button Content="login" HorizontalAlignment="Left" Margin="346,21,0,7" Style="{StaticResource button}" Grid.Row="3" Height="NaN" Width="140" Click="Button_Click_4" />
+        <Button Content="forget password" HorizontalAlignment="Left" Margin="454,34,0,0" VerticalAlignment="Top" Style="{StaticResource button}" Width="234" Click="Button_Click_1" Grid.Row="4" Height="50"/>
+        <Label Content="don't have  account " HorizontalAlignment="Left" Margin="24,48,0,0" VerticalAlignment="Top" Width="146" HorizontalContentAlignment="Center" FontWeight="Bold" Grid.Row="4" Height="29" />
+        <Button Content="sing up" HorizontalAlignment="Left" Margin="175,34,0,0" VerticalAlignment="Top" Style="{StaticResource button}" Click="Button_Click" Grid.Row="4" Height="50" Width="140"/>
+        <Button Content="ADMIN" Margin="330,29,330,28" Style="{StaticResource button}" Grid.Row="5" Click="Button_Click_5" RenderTransformOrigin="0.135,0.538"/>
+
+
+    </Grid>
+</Page>
